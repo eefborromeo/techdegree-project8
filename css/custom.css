@@ -1,0 +1,6 @@
+/* CSS Transitions */
+
+.show {
+  transition: background-color .5s ease;
+  background-color: black;
+}
