@@ -87,11 +87,11 @@ startGame.addEventListener('click', () => {
 
     // RESTART SCORE
     missed = 0;
-    for (i = 0; i < tries.length; i++){
+    for (var i = 0; i < tries.length; i++){
       tries[i].src = 'images/liveHeart.png';
     }
 
-    for (i = 0; i < buttonLetter.length; i++){
+    for (var i = 0; i < buttonLetter.length; i++){
       buttonLetter[i].removeAttribute('disabled');
       buttonLetter[i].classList.remove('chosen');
     }
