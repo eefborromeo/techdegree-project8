@@ -78,12 +78,12 @@ addPhraseToDisplay(phraseArray);
 
 // EVENT LISTENERS
 
-startGame.addEventListener('click', () => {
+startGame.addEventListener('click', (e) => {
   // START
   startPage.style.display = 'none';
 
   // RESTART
-  if (startGame.textContent == 'Restart Game') {
+  if (e.target) {
 
     // RESTART SCORE
     missed = 0;
